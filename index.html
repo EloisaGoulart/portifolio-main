@@ -90,13 +90,13 @@
                     <div class="projeto-logo">
                         <img src="assets/projetos/Logo Tux Games.png" alt="Logo Tux Games" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150?text=Projeto+1'">
                     </div>
-                    <div class="card-buttons">
-                        <a href="https://tux-games-nh58.vercel.app/index.html" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
-                        <button class="btn-ver-mais" onclick="abrirDetalhes(1)">Ver Mais</button>
-                    </div>
                     <div class="card-info">
                         <h3>Tux Games</h3>
                         <p>Catálogo web de jogos com filtros</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="https://tux-games-nh58.vercel.app/index.html" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
+                        <button class="btn-ver-mais" onclick="abrirDetalhes(1)">Ver Mais</button>
                     </div>
                 </div>
             </div>
@@ -107,13 +107,13 @@
                     <div class="projeto-logo">
                         <img src="assets/projetos/PortalSesi Logo.png" alt="Logo Projeto 2" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150?text=Projeto+2'">
                     </div>
-                    <div class="card-buttons">
-                        <a href="https://sesi-alferex-alefes-projects-0d1e5f4f.vercel.app/login" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
-                        <button class="btn-ver-mais" onclick="abrirDetalhes(2)">Ver Mais</button>
-                    </div>
                     <div class="card-info">
                         <h3>Portal Sesi em Casa</h3>
                         <p>Plataforma Escolar</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="https://sesi-alferex-alefes-projects-0d1e5f4f.vercel.app/login" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
+                        <button class="btn-ver-mais" onclick="abrirDetalhes(2)">Ver Mais</button>
                     </div>
                 </div>
             </div>
@@ -124,13 +124,13 @@
                     <div class="projeto-logo">
                         <img src="assets/projetos/Logo Hecho.png" alt="Logo Hecho Base" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150?text=Projeto+4'">
                     </div>
-                    <div class="card-buttons">
-                        <a href="https://github.com/EloisaGoulart/App-Mobile-main" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
-                        <button class="btn-ver-mais" onclick="abrirDetalhes(4)">Ver Mais</button>
-                    </div>
                     <div class="card-info">
                         <h3>Hecho Base</h3>
                         <p>E-commerce de produtos artesanais</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="https://github.com/EloisaGoulart/App-Mobile-main" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
+                        <button class="btn-ver-mais" onclick="abrirDetalhes(4)">Ver Mais</button>
                     </div>
                 </div>
             </div>
@@ -141,13 +141,13 @@
                     <div class="projeto-logo">
                         <img src="assets/projetos/Logo PedalCrew.png" alt="Logo PedalCrew" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150?text=Projeto+3'">
                     </div>
-                    <div class="card-buttons">
-                        <a href="https://www.figma.com/proto/EOEGp1LJDOqsf3BUppWkEq/Projeto-Pedalcrew?node-id=232-805&p=f&t=BNK7hkZpjEMCaYdU-0&scaling=scale-down&content-scaling=fixed&page-id=82%3A352&starting-point-node-id=232%3A922" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
-                        <button class="btn-ver-mais" onclick="abrirDetalhes(3)">Ver Mais</button>
-                    </div>
                     <div class="card-info">
                         <h3>PedalCrew</h3>
                         <p>Aplicativo de ciclismo e comunidade</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="https://www.figma.com/proto/EOEGp1LJDOqsf3BUppWkEq/Projeto-Pedalcrew?node-id=232-805&p=f&t=BNK7hkZpjEMCaYdU-0&scaling=scale-down&content-scaling=fixed&page-id=82%3A352&starting-point-node-id=232%3A922" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
+                        <button class="btn-ver-mais" onclick="abrirDetalhes(3)">Ver Mais</button>
                     </div>
                 </div>
             </div>
@@ -162,11 +162,6 @@
             
             <div id="detalhes-projeto-1" class="detalhes-conteudo" style="display: none;">
                 <h3>Tux Games</h3>
-                <div class="descricao-projeto">
-                    <p>Tux Games é um catálogo web desenvolvido em HTML, CSS e JavaScript, com um banco de dados usado para armazenar as mensagens enviadas pelo formulário de contato. O projeto é dividido em três páginas — vitrine, catálogo e contato — cada uma com seus próprios arquivos de estrutura, estilo e script.</p>
-                    <p>No catálogo, o JavaScript carrega os jogos, cria os cards e aplica o sistema de filtros, organizando os itens por categoria a partir da manipulação do DOM. Já a página de contato envia os dados preenchidos pelo usuário para o banco de dados após validações básicas.</p>
-                    <p>A estrutura do código separa HTML, CSS e JavaScript por função, com o JS responsável pelas funcionalidades do catálogo e do envio das mensagens.</p>
-                </div>
                 
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="mudarSlide(1, -1)">&#10094;</button>
@@ -177,15 +172,27 @@
                     <button class="carousel-btn next" onclick="mudarSlide(1, 1)">&#10095;</button>
                 </div>
                 <div class="carousel-indicadores" id="indicadores-1"></div>
+                
+                <div class="descricao-projeto">
+                    <p>Tux Games é um catálogo web desenvolvido em HTML, CSS e JavaScript, com um banco de dados usado para armazenar as mensagens enviadas pelo formulário de contato. O projeto é dividido em três páginas — vitrine, catálogo e contato — cada uma com seus próprios arquivos de estrutura, estilo e script.</p>
+                    <p>No catálogo, o JavaScript carrega os jogos, cria os cards e aplica o sistema de filtros, organizando os itens por categoria a partir da manipulação do DOM. Já a página de contato envia os dados preenchidos pelo usuário para o banco de dados após validações básicas.</p>
+                    <p>A estrutura do código separa HTML, CSS e JavaScript por função, com o JS responsável pelas funcionalidades do catálogo e do envio das mensagens.</p>
+                </div>
             </div>
 
             <div id="detalhes-projeto-2" class="detalhes-conteudo" style="display: none;">
                 <h3>Portal Sesi em Casa</h3>
-                <div class="descricao-projeto">
-                    <p>Portal SESI em Casa é uma plataforma estudantil desenvolvida com Next.js e TypeScript, usando Supabase como backend para autenticação, banco de dados, armazenamento de arquivos e segurança. O sistema conta com perfis separados para alunos, professores, responsáveis e administrador, cada um com permissões definidas diretamente no Postgres.</p>
-                    <p>As regras de segurança foram criadas com RLS (Row Level Security), garantindo que cada usuário acesse apenas seus próprios dados. Professores visualizam e gerenciam apenas suas turmas, responsáveis têm acesso somente aos alunos vinculados e alunos veem exclusivamente suas informações. Essas políticas foram aplicadas nas tabelas de notas, frequência, comunicados, materiais e turmas.</p>
-                    <p>A plataforma inclui CRUD completo de usuários e turmas, upload de arquivos via Supabase Storage, dashboards de desempenho, calendário escolar, comunicados e gerenciamento de avaliações e frequência.</p>
+                
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="mudarSlide(2, -1)">&#10094;</button>
+                    <div class="carousel-imagens" id="carousel-2">
+                        <img src="assets/projetos/projeto2-img1.png" alt="Imagem 1" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+1'">
+                        <img src="assets/portalsesi foto.jpeg" alt="Imagem 2" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+2'">
+                        <img src="assets/projetos/projeto2-img3.png" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+3'">
+                    </div>
+                    <button class="carousel-btn next" onclick="mudarSlide(2, 1)">&#10095;</button>
                 </div>
+                <div class="carousel-indicadores" id="indicadores-2"></div>
                 
                 <div class="credenciais-acesso">
                     <h4><i class="fas fa-key"></i> Credenciais de Acesso para Teste</h4>
@@ -206,32 +213,16 @@
                     </div>
                 </div>
                 
-                <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="mudarSlide(2, -1)">&#10094;</button>
-                    <div class="carousel-imagens" id="carousel-2">
-                        <img src="assets/projetos/projeto2-img1.png" alt="Imagem 1" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+1'">
-                        <img src="assets/portalsesi foto.jpeg" alt="Imagem 2" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+2'">
-                        <img src="assets/projetos/projeto2-img3.png" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+3'">
-                    </div>
-                    <button class="carousel-btn next" onclick="mudarSlide(2, 1)">&#10095;</button>
+                <div class="descricao-projeto">
+                    <p>Portal SESI em Casa é uma plataforma estudantil desenvolvida com Next.js e TypeScript, usando Supabase como backend para autenticação, banco de dados, armazenamento de arquivos e segurança. O sistema conta com perfis separados para alunos, professores, responsáveis e administrador, cada um com permissões definidas diretamente no Postgres.</p>
+                    <p>As regras de segurança foram criadas com RLS (Row Level Security), garantindo que cada usuário acesse apenas seus próprios dados. Professores visualizam e gerenciam apenas suas turmas, responsáveis têm acesso somente aos alunos vinculados e alunos veem exclusivamente suas informações. Essas políticas foram aplicadas nas tabelas de notas, frequência, comunicados, materiais e turmas.</p>
+                    <p>A plataforma inclui CRUD completo de usuários e turmas, upload de arquivos via Supabase Storage, dashboards de desempenho, calendário escolar, comunicados e gerenciamento de avaliações e frequência.</p>
                 </div>
-                <div class="carousel-indicadores" id="indicadores-2"></div>
             </div>
 
             <div id="detalhes-projeto-4" class="detalhes-conteudo" style="display: none;">
                 <h3>Hecho Base - Detalhes</h3>
-                <div class="descricao-projeto">
-                    <p>Hecho é um aplicativo mobile desenvolvido em React Native (Expo) com TypeScript, utilizando Supabase para autenticação, banco de dados e armazenamento de imagens.</p>
-                    <p>O app conta com CRUD completo de perfis, suporte a múltiplas contas, upload de fotos via câmera, favoritos por usuário, gerenciamento de sessão e sincronização em tempo real com Postgres.</p>
-                    <p>Também foram criadas APIs próprias para cálculo de signo, leitura de tarot e geração de dados místicos, unindo lógica de datas, tabelas personalizadas e manipulação de JSON diretamente no React Native.</p>
-                </div>
                 
-                <div class="video-link-container">
-                    <a href="#" target="_blank" class="btn-video-externo">
-                        <i class="fas fa-play-circle"></i> Assistir Vídeo do Projeto
-                    </a>
-                </div>
-
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="mudarSlide(4, -1)">&#10094;</button>
                     <div class="carousel-imagens" id="carousel-4">
@@ -248,31 +239,44 @@
                     <button class="carousel-btn next" onclick="mudarSlide(4, 1)">&#10095;</button>
                 </div>
                 <div class="carousel-indicadores" id="indicadores-4"></div>
+                
+                <div class="video-link-container">
+                    <a href="#" target="_blank" class="btn-video-externo">
+                        <i class="fas fa-play-circle"></i> Assistir Vídeo do Projeto
+                    </a>
+                </div>
+                
+                <div class="descricao-projeto">
+                    <p>Hecho é um aplicativo mobile desenvolvido em React Native (Expo) com TypeScript, utilizando Supabase para autenticação, banco de dados e armazenamento de imagens.</p>
+                    <p>O app conta com CRUD completo de perfis, suporte a múltiplas contas, upload de fotos via câmera, favoritos por usuário, gerenciamento de sessão e sincronização em tempo real com Postgres.</p>
+                    <p>Também foram criadas APIs próprias para cálculo de signo, leitura de tarot e geração de dados místicos, unindo lógica de datas, tabelas personalizadas e manipulação de JSON diretamente no React Native.</p>
+                </div>
             </div>
 
             <div id="detalhes-projeto-3" class="detalhes-conteudo" style="display: none;">
                 <h3>PedalCrew</h3>
-                <div class="descricao-projeto">
-                    <p>O PedalCrew é um protótipo pensado para ciclistas, criado para organizar treinos, acompanhar rotas e permitir interação entre usuários. A plataforma inclui rotas personalizadas, monitoramento de desempenho, feed social, perfis com publicações, grupos e comunidades, além de chat para comunicação entre ciclistas e recursos de apoio como integração com wearables e modo SOS.</p>
-                    <p>O desenvolvimento seguiu os passos do Design Thinking, começando com pesquisa de usuários, análise de concorrentes e definição de personas. As telas foram prototipadas em Figma e Adobe XD, priorizando fluxos claros, navegação simples e organização de informações, sempre pensando na experiência de quem pedala, seja para lazer ou prática esportiva.</p>
-                </div>
                 
-                <div class="video-link-container">
-                    <a href="https://www.behance.net/gallery/237922493/%28UIUX%29-PedalCrew-App-de-Ciclismo-SENAI" target="_blank" class="btn-video-externo">
-                        <i class="fab fa-behance"></i> Ver Projeto no Behance
-                    </a>
-                </div>
-
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="mudarSlide(3, -1)">&#10094;</button>
                     <div class="carousel-imagens" id="carousel-3">
-                        <img src="assets/Pedal Crew Design.png"Imagem 1" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+1'">
+                        <img src="assets/Pedal Crew Design.png" alt="Imagem 1" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+1'">
                         <img src="assets/PedalCrew Design System.png" alt="Imagem 2" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+2'">
                         <img src="assets/PedalCrew App Flow.png" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+3'">
                     </div>
                     <button class="carousel-btn next" onclick="mudarSlide(3, 1)">&#10095;</button>
                 </div>
                 <div class="carousel-indicadores" id="indicadores-3"></div>
+                
+                <div class="video-link-container">
+                    <a href="https://www.behance.net/gallery/237922493/%28UIUX%29-PedalCrew-App-de-Ciclismo-SENAI" target="_blank" class="btn-video-externo">
+                        <i class="fab fa-behance"></i> Ver Projeto no Behance
+                    </a>
+                </div>
+                
+                <div class="descricao-projeto">
+                    <p>O PedalCrew é um protótipo pensado para ciclistas, criado para organizar treinos, acompanhar rotas e permitir interação entre usuários. A plataforma inclui rotas personalizadas, monitoramento de desempenho, feed social, perfis com publicações, grupos e comunidades, além de chat para comunicação entre ciclistas e recursos de apoio como integração com wearables e modo SOS.</p>
+                    <p>O desenvolvimento seguiu os passos do Design Thinking, começando com pesquisa de usuários, análise de concorrentes e definição de personas. As telas foram prototipadas em Figma e Adobe XD, priorizando fluxos claros, navegação simples e organização de informações, sempre pensando na experiência de quem pedala, seja para lazer ou prática esportiva.</p>
+                </div>
             </div>
 
         </div>
