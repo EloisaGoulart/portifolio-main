@@ -387,6 +387,11 @@ a {
     animation: slideDown 0.4s ease-out;
 }
 
+/* Garantir espaço para o botão fechar no topo */
+.detalhes-conteudo {
+    padding-top: 30px;
+}
+
 @keyframes slideDown {
     from {
         transform: translateY(-50px);
@@ -421,16 +426,21 @@ a {
 }
 
 .btn-fechar-modal {
-    position: absolute;
-    top: 15px;
-    right: 20px;
+    position: sticky;
+    top: 0;
+    right: 0;
     font-size: 2rem;
-    background: none;
+    background: white;
     border: none;
     color: var(--text-color);
     cursor: pointer;
     transition: color 0.3s;
-    z-index: 10;
+    z-index: 100;
+    float: right;
+    margin: 10px 10px 0 0;
+    padding: 5px 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .btn-fechar-modal:hover {
@@ -510,6 +520,13 @@ a {
 #carousel-4 img:last-child {
     object-fit: cover;
     width: 100%;
+}
+
+/* Carousel específico para PedalCrew (imagens horizontais) */
+#carousel-3 img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-btn {
@@ -805,9 +822,21 @@ a {
 
     /* Modal */
     .modal-content {
-        padding: 20px 15px;
-        margin: 10px;
-        max-height: 95vh;
+        padding: 15px;
+        margin: 20px 10px;
+        max-height: 85vh;
+        padding-top: 50px;
+    }
+
+    .btn-fechar-modal {
+        position: fixed;
+        top: 25px;
+        right: 15px;
+        font-size: 2.5rem;
+        background: white;
+        padding: 0 12px;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .detalhes-conteudo h3 {
@@ -830,6 +859,21 @@ a {
 
     #carousel-4 {
         height: 450px;
+    }
+
+    /* Primeira imagem do Hecho no mobile - não cortar */
+    #carousel-4 img:first-child {
+        object-fit: contain;
+        width: auto;
+    }
+
+    /* PedalCrew no mobile - manter contain */
+    #carousel-3 {
+        height: 250px;
+    }
+
+    #carousel-3 img {
+        object-fit: contain;
     }
 
     .carousel-btn {
@@ -910,6 +954,31 @@ a {
 
     #carousel-4 {
         height: 350px;
+    }
+
+    /* Primeira imagem Hecho em telas pequenas */
+    #carousel-4 img:first-child {
+        object-fit: contain;
+        width: auto;
+    }
+
+    /* PedalCrew em telas pequenas */
+    #carousel-3 {
+        height: 200px;
+    }
+
+    #carousel-3 img {
+        object-fit: contain;
+    }
+
+    .modal-content {
+        margin: 15px 5px;
+        padding-top: 55px;
+    }
+
+    .btn-fechar-modal {
+        top: 20px;
+        right: 10px;
     }
 
     .carousel-btn {
