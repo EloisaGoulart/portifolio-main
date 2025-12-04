@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloisa Goulart | Portfólio Front-End & UX/UI</title>
+    <!-- Caminho corrigido para o arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#sobre" class="logo">Eloisa Goulart</a>
+        <nav class="navbar">
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+        </nav>
+    </header>
+
+    <section id="sobre" class="secao-principal container">
+        <div class="perfil">
+            <div class="avatar">
+                <img src="assets/Foto Perfil.jpeg" alt="Foto de Eloisa Goulart" loading="lazy">
+            </div>
+            <h1 class="nome">Eloisa Goulart</h1>
+            <p class="local">São Paulo - Brasil</p>
+            <p class="funcao">Desenvolvedora Front-end e Ux|Ui Designer</p>
+            
+            <div class="links-sociais-secao-principal">
+                <a href="https://www.linkedin.com/in/eloisa-goulart-726258242" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a> 
+                <a href="https://github.com/EloisaGoulart" target="_blank" title="GitHub"><i class="fab fa-github"></i></a> 
+                <a href="https://www.behance.net/eloisagoulart_" target="_blank" title="Behance"><i class="fab fa-behance"></i></a> 
+                <a href="#" onclick="copiarEmail(event)" title="Copiar E-mail"><i class="fas fa-envelope"></i></a> 
+            </div>
+        </div>
+
+        <div class="texto-apresentacao">
+            <p>Graduanda em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento front-end e UX/UI Design. Busco criar interfaces funcionais, claras e visualmente consistentes, fortalecendo minhas habilidades em usabilidade, pesquisa com usuários e organização visual.</p>
+            <p>Tenho experiência com tecnologias front-end, o que me permite unir técnica e sensibilidade estética na construção de produtos digitais. A partir do próximo ano, inicio também a graduação em Publicidade e Propaganda para ampliar meu domínio em comunicação, design e estratégia, alinhando ainda mais minha formação ao desenvolvimento de interfaces e experiências digitais.</p>
+            <p>Nesse primeiro momento, quero fortalecer minha base técnica, expandir minhas experiências e desenvolver uma carreira estruturada e em constante crescimento no front-end.</p>
+            
+            <div class="curriculo-link">
+                <a href="SEU_LINK_DO_CANVA_AQUI" target="_blank" class="btn-curriculo">
+                    <i class="fas fa-file-alt"></i> Currículo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="secao container">
+        <h2><i class="fas fa-star"></i> Minhas Habilidades</h2>
+        <div class="habilidades-container">
+           <span class="habilidade-badge frontend">HTML5 & CSS3</span>
+           <span class="habilidade-badge frontend">JavaScript</span>
+           <span class="habilidade-badge frontend">TypeScript</span>
+           <span class="habilidade-badge frontend">React</span>
+
+           <span class="habilidade-badge ferramentas">Git & GitHub</span>
+           <span class="habilidade-badge ferramentas">Supabase</span>
+           <span class="habilidade-badge ferramentas">API</span>
+
+           <span class="habilidade-badge backend">SQL</span>
+           <span class="habilidade-badge backend">Python</span>
+           <span class="habilidade-badge backend">Java</span>
+           <span class="habilidade-badge backend">C#</span>
+
+           <span class="habilidade-badge design">UX/UI Design</span>
+           <span class="habilidade-badge design">Figma</span>
+           <span class="habilidade-badge design">Canva</span>
+
+           <span class="habilidade-badge tech">BigData e IA</span>
+           <span class="habilidade-badge tech">Chatbot</span>
+           <span class="habilidade-badge tech">IoT</span>
+
+           <span class="habilidade-badge outras">FlutterFlow</span>
+           <span class="habilidade-badge outras">Microsoft Office</span>
+    
+        </div>
+    </section>
+
+    <section id="projetos" class="secao projetos container">
+        <h2><i class="fas fa-laptop-code"></i> Projetos de Destaque</h2>
+        <div class="projetos-container">
+            
+            <!-- Tux Games -->
+            <div class="projeto-card" data-projeto="1">
+                <div class="card-base">
+                    <div class="projeto-logo">
+                        <img src="assets/projetos/Logo Tux Games.png" alt="Logo Tux Games" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150?text=Projeto+1'">
+                    </div>
+                    <div class="card-info">
+                        <h3>Tux Games</h3>
+                        <p>Catálogo web de jogos com filtros</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="https://tux-games-nh58.vercel.app/index.html" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
+                        <button class="btn-ver-mais" onclick="abrirDetalhes(1)">Ver Mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portal Sesi em Casa -->
+            <div class="projeto-card" data-projeto="2">
+                <div class="card-base">
+                    <div class="projeto-logo">
+                        <img src="assets/projetos/PortalSesi Logo.png" alt="Logo Projeto 2" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150?text=Projeto+2'">
+                    </div>
+                    <div class="card-info">
+                        <h3>Portal Sesi em Casa</h3>
+                        <p>Plataforma Escolar</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="https://sesi-alferex-alefes-projects-0d1e5f4f.vercel.app/login" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
+                        <button class="btn-ver-mais" onclick="abrirDetalhes(2)">Ver Mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hecho -->
+            <div class="projeto-card" data-projeto="4">
+                <div class="card-base">
+                    <div class="projeto-logo">
+                        <img src="assets/projetos/Logo Hecho.png" alt="Logo Hecho Base" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150?text=Projeto+4'">
+                    </div>
+                    <div class="card-info">
+                        <h3>Hecho Base</h3>
+                        <p>E-commerce de produtos artesanais</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="https://github.com/EloisaGoulart/App-Mobile-main" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
+                        <button class="btn-ver-mais" onclick="abrirDetalhes(4)">Ver Mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pedal Crew -->
+            <div class="projeto-card" data-projeto="3">
+                <div class="card-base">
+                    <div class="projeto-logo">
+                        <img src="assets/projetos/Logo PedalCrew.png" alt="Logo PedalCrew" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150?text=Projeto+3'">
+                    </div>
+                    <div class="card-info">
+                        <h3>PedalCrew</h3>
+                        <p>Aplicativo de ciclismo e comunidade</p>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="https://www.figma.com/proto/EOEGp1LJDOqsf3BUppWkEq/Projeto-Pedalcrew?node-id=232-805&p=f&t=BNK7hkZpjEMCaYdU-0&scaling=scale-down&content-scaling=fixed&page-id=82%3A352&starting-point-node-id=232%3A922" target="_blank" class="btn-plataforma">Acessar Plataforma</a>
+                        <button class="btn-ver-mais" onclick="abrirDetalhes(3)">Ver Mais</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal de Detalhes -->
+    <div id="modal-detalhes" class="modal-detalhes">
+        <div class="modal-content">
+            <button class="btn-fechar-modal" onclick="fecharDetalhes()">&times;</button>
+            
+            <div id="detalhes-projeto-1" class="detalhes-conteudo" style="display: none;">
+                <h3>Tux Games</h3>
+                <div class="descricao-projeto">
+                    <p>Tux Games é um catálogo web desenvolvido em HTML, CSS e JavaScript, com um banco de dados usado para armazenar as mensagens enviadas pelo formulário de contato. O projeto é dividido em três páginas — vitrine, catálogo e contato — cada uma com seus próprios arquivos de estrutura, estilo e script.</p>
+                    <p>No catálogo, o JavaScript carrega os jogos, cria os cards e aplica o sistema de filtros, organizando os itens por categoria a partir da manipulação do DOM. Já a página de contato envia os dados preenchidos pelo usuário para o banco de dados após validações básicas.</p>
+                    <p>A estrutura do código separa HTML, CSS e JavaScript por função, com o JS responsável pelas funcionalidades do catálogo e do envio das mensagens.</p>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="mudarSlide(1, -1)">&#10094;</button>
+                    <div class="carousel-imagens" id="carousel-1">
+                        <img src="assets/Tipografia Tux Games.jpeg" alt="Imagem 1" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+1'">
+                        <img src="assets/supabase-schema-mjonleauwersmikhshao (1).png" alt="Imagem 2" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+2'">
+                    </div>
+                    <button class="carousel-btn next" onclick="mudarSlide(1, 1)">&#10095;</button>
+                </div>
+                <div class="carousel-indicadores" id="indicadores-1"></div>
+            </div>
+
+            <div id="detalhes-projeto-2" class="detalhes-conteudo" style="display: none;">
+                <h3>Portal Sesi em Casa</h3>
+                <div class="descricao-projeto">
+                    <p>Portal SESI em Casa é uma plataforma estudantil desenvolvida com Next.js e TypeScript, usando Supabase como backend para autenticação, banco de dados, armazenamento de arquivos e segurança. O sistema conta com perfis separados para alunos, professores, responsáveis e administrador, cada um com permissões definidas diretamente no Postgres.</p>
+                    <p>As regras de segurança foram criadas com RLS (Row Level Security), garantindo que cada usuário acesse apenas seus próprios dados. Professores visualizam e gerenciam apenas suas turmas, responsáveis têm acesso somente aos alunos vinculados e alunos veem exclusivamente suas informações. Essas políticas foram aplicadas nas tabelas de notas, frequência, comunicados, materiais e turmas.</p>
+                    <p>A plataforma inclui CRUD completo de usuários e turmas, upload de arquivos via Supabase Storage, dashboards de desempenho, calendário escolar, comunicados e gerenciamento de avaliações e frequência.</p>
+                </div>
+                
+                <div class="credenciais-acesso">
+                    <h4><i class="fas fa-key"></i> Credenciais de Acesso para Teste</h4>
+                    <div class="credencial-item">
+                        <strong>Responsável:</strong>
+                        <p><i class="fas fa-envelope"></i> alefe.g.santos@aluno.senai.br</p>
+                        <p><i class="fas fa-lock"></i> 12345678</p>
+                    </div>
+                    <div class="credencial-item">
+                        <strong>Professor:</strong>
+                        <p><i class="fas fa-envelope"></i> alefe.sesi@gmail.com</p>
+                        <p><i class="fas fa-lock"></i> W8y9x6k@</p>
+                    </div>
+                    <div class="credencial-item">
+                        <strong>Aluno:</strong>
+                        <p><i class="fas fa-envelope"></i> laurapnasc25@gmail.com</p>
+                        <p><i class="fas fa-lock"></i> 12345678</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="mudarSlide(2, -1)">&#10094;</button>
+                    <div class="carousel-imagens" id="carousel-2">
+                        <img src="assets/projetos/projeto2-img1.png" alt="Imagem 1" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+1'">
+                        <img src="assets/portalsesi foto.jpeg" alt="Imagem 2" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+2'">
+                        <img src="assets/projetos/projeto2-img3.png" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+3'">
+                    </div>
+                    <button class="carousel-btn next" onclick="mudarSlide(2, 1)">&#10095;</button>
+                </div>
+                <div class="carousel-indicadores" id="indicadores-2"></div>
+            </div>
+
+            <div id="detalhes-projeto-4" class="detalhes-conteudo" style="display: none;">
+                <h3>Hecho Base - Detalhes</h3>
+                <div class="descricao-projeto">
+                    <p>Hecho é um aplicativo mobile desenvolvido em React Native (Expo) com TypeScript, utilizando Supabase para autenticação, banco de dados e armazenamento de imagens.</p>
+                    <p>O app conta com CRUD completo de perfis, suporte a múltiplas contas, upload de fotos via câmera, favoritos por usuário, gerenciamento de sessão e sincronização em tempo real com Postgres.</p>
+                    <p>Também foram criadas APIs próprias para cálculo de signo, leitura de tarot e geração de dados místicos, unindo lógica de datas, tabelas personalizadas e manipulação de JSON diretamente no React Native.</p>
+                </div>
+                
+                <div class="video-link-container">
+                    <a href="#" target="_blank" class="btn-video-externo">
+                        <i class="fas fa-play-circle"></i> Assistir Vídeo do Projeto
+                    </a>
+                </div>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="mudarSlide(4, -1)">&#10094;</button>
+                    <div class="carousel-imagens" id="carousel-4">
+                        <img src="assets/Tipografia Hecho.jpeg" alt="Imagem 1" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+1'">
+                        <img src="assets/Home hecho.jpeg" alt="Imagem 2" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+2'">
+                        <img src="assets/API tarot Hecho.jpeg" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+3'">
+                        <img src="assets/Tela Produtos Hecho.jpeg" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+4'">
+                        <img src="assets/Produto Hecho.jpeg" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+5'">
+                        <img src="assets/Favortos Hecho.jpeg" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+6'">
+                        <img src="assets/Cadastro Hecho.jpeg" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+7'">
+                        <img src="assets/API Signo Hecho.jpeg" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+8'">
+                        <img src="assets/supabase-schema-qzkamrlhgiykbfifnihk.png" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+9'">
+                    </div>
+                    <button class="carousel-btn next" onclick="mudarSlide(4, 1)">&#10095;</button>
+                </div>
+                <div class="carousel-indicadores" id="indicadores-4"></div>
+            </div>
+
+            <div id="detalhes-projeto-3" class="detalhes-conteudo" style="display: none;">
+                <h3>PedalCrew</h3>
+                <div class="descricao-projeto">
+                    <p>O PedalCrew é um protótipo pensado para ciclistas, criado para organizar treinos, acompanhar rotas e permitir interação entre usuários. A plataforma inclui rotas personalizadas, monitoramento de desempenho, feed social, perfis com publicações, grupos e comunidades, além de chat para comunicação entre ciclistas e recursos de apoio como integração com wearables e modo SOS.</p>
+                    <p>O desenvolvimento seguiu os passos do Design Thinking, começando com pesquisa de usuários, análise de concorrentes e definição de personas. As telas foram prototipadas em Figma e Adobe XD, priorizando fluxos claros, navegação simples e organização de informações, sempre pensando na experiência de quem pedala, seja para lazer ou prática esportiva.</p>
+                </div>
+                
+                <div class="video-link-container">
+                    <a href="https://www.behance.net/gallery/237922493/%28UIUX%29-PedalCrew-App-de-Ciclismo-SENAI" target="_blank" class="btn-video-externo">
+                        <i class="fab fa-behance"></i> Ver Projeto no Behance
+                    </a>
+                </div>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="mudarSlide(3, -1)">&#10094;</button>
+                    <div class="carousel-imagens" id="carousel-3">
+                        <img src="assets/projetos/projeto3-img1.png" alt="Imagem 1" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+1'">
+                        <img src="assets/projetos/projeto3-img2.png" alt="Imagem 2" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+2'">
+                        <img src="assets/projetos/projeto3-img3.png" alt="Imagem 3" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+3'">
+                    </div>
+                    <button class="carousel-btn next" onclick="mudarSlide(3, 1)">&#10095;</button>
+                </div>
+                <div class="carousel-indicadores" id="indicadores-3"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Eloisa Goulart. São Paulo - Brasil.</p>
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Caminho correto para o script.js -->
+</body>
+</html>

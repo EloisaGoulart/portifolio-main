@@ -1,0 +1,948 @@
+/* Variáveis de Cores */
+:root {
+    --primary-color: #1C3144; /* Deep Navy (Texto/Foco) */
+    --accent-color: #00A896; /* Deep Teal (Destaque) */
+    --background-light: #F7F8F9; 
+    --text-color: #4A4A4A;
+    --shadow-light: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Base e Fluidez */
+html {
+    scroll-behavior: smooth; /* Scroll suave para o menu */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.secao, .secao-principal {
+    padding: 100px 0; /* Maior espaçamento vertical */
+    border-bottom: 1px solid #EDEDED; /* Divisão sutil */
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+/* 1. Header (Navegação) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.navbar a {
+    margin-left: 35px;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+/* 2. Seção Sobre Mim (Layout de duas colunas) */
+.secao-principal {
+    display: flex;
+    gap: 60px;
+    padding-top: 120px;
+}
+
+.perfil {
+    flex-basis: 400px; 
+    flex-shrink: 0;
+    text-align: center;
+    border-right: 1px solid #E0E0E0;
+    padding-right: 60px;
+}
+
+.avatar img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center 40%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid var(--accent-color);
+    box-shadow: var(--shadow-light);
+}
+
+.nome { font-size: 2rem; color: var(--primary-color); }
+.local, .funcao { color: var(--text-color); margin-bottom: 10px; }
+.funcao { font-weight: bold; }
+
+.links-sociais-secao-principal a {
+    font-size: 1.5rem;
+    margin: 0 8px;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+.links-sociais-secao-principal a:hover {
+    color: var(--accent-color);
+}
+
+.texto-apresentacao {
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+.texto-apresentacao p {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-indent: 2em;
+}
+
+/* Link do Currículo */
+.curriculo-link {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.btn-curriculo {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 168, 150, 0.2);
+}
+
+.btn-curriculo:hover {
+    background-color: #008f7b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 168, 150, 0.3);
+}
+
+.btn-curriculo i {
+    margin-right: 8px;
+}
+
+/* 3. Seção Habilidades */
+#habilidades {
+    background-color: #FFFFFF;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.habilidade-badge {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 168, 150, 0.2);
+}
+
+.habilidade-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 168, 150, 0.3);
+}
+
+/* Categorias de Habilidades - Degradê progressivo */
+.habilidade-badge.frontend {
+    background-color: #00B8A8; /* Tom mais claro */
+    box-shadow: 0 2px 8px rgba(0, 184, 168, 0.2);
+}
+.habilidade-badge.frontend:hover {
+    background-color: #00a393;
+    box-shadow: 0 4px 12px rgba(0, 184, 168, 0.3);
+}
+
+.habilidade-badge.ferramentas {
+    background-color: #00A896; /* Tom médio-claro */
+    box-shadow: 0 2px 8px rgba(0, 168, 150, 0.2);
+}
+.habilidade-badge.ferramentas:hover {
+    background-color: #008f7b;
+    box-shadow: 0 4px 12px rgba(0, 168, 150, 0.3);
+}
+
+.habilidade-badge.backend {
+    background-color: #00A08F; /* Tom médio */
+    box-shadow: 0 2px 8px rgba(0, 160, 143, 0.2);
+}
+.habilidade-badge.backend:hover {
+    background-color: #008d7d;
+    box-shadow: 0 4px 12px rgba(0, 160, 143, 0.3);
+}
+
+.habilidade-badge.design {
+    background-color: #009385; /* Tom médio-escuro */
+    box-shadow: 0 2px 8px rgba(0, 147, 133, 0.2);
+}
+.habilidade-badge.design:hover {
+    background-color: #008074;
+    box-shadow: 0 4px 12px rgba(0, 147, 133, 0.3);
+}
+
+.habilidade-badge.tech {
+    background-color: #007E72; /* Tom escuro */
+    box-shadow: 0 2px 8px rgba(0, 126, 114, 0.2);
+}
+.habilidade-badge.tech:hover {
+    background-color: #006e63;
+    box-shadow: 0 4px 12px rgba(0, 126, 114, 0.3);
+}
+
+.habilidade-badge.outras {
+    background-color: #006B5F; /* Tom mais escuro */
+    box-shadow: 0 2px 8px rgba(0, 107, 95, 0.2);
+}
+.habilidade-badge.outras:hover {
+    background-color: #005b51;
+    box-shadow: 0 4px 12px rgba(0, 107, 95, 0.3);
+}
+
+/* 4. Seção Projetos */
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 350px));
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background: #ffffff;
+    box-shadow: var(--shadow-light);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #f0f0f0;
+}
+
+.projeto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    border-color: var(--accent-color);
+}
+
+.card-base {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projeto-logo {
+    width: 240px;
+    height: 140px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: transparent;
+    padding: 0;
+    border-radius: 12px;
+}
+
+.projeto-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-info {
+    margin-bottom: 20px;
+}
+
+.card-info h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.card-info p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.btn-plataforma,
+.btn-ver-mais {
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+.btn-plataforma {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 4px 12px rgba(28, 49, 68, 0.2);
+}
+
+.btn-plataforma:hover {
+    background-color: #0e1e2c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(28, 49, 68, 0.3);
+}
+
+.btn-ver-mais {
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 168, 150, 0.2);
+}
+
+.btn-ver-mais:hover {
+    background-color: #008f7b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 168, 150, 0.3);
+}
+
+/* Modal de Detalhes */
+.modal-detalhes {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.btn-fechar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 10;
+}
+
+.btn-fechar-modal:hover {
+    color: var(--accent-color);
+}
+
+.detalhes-conteudo h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.descricao-projeto {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.descricao-projeto p {
+    margin-bottom: 20px;
+    text-indent: 2em;
+}
+
+/* Carousel de Imagens */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    background-color: var(--background-light);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carousel-imagens {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-light);
+}
+
+.carousel-imagens img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 12px;
+}
+
+.carousel-imagens img.ativo {
+    opacity: 1;
+}
+
+/* Carousel específico para Hecho (imagens mobile) */
+#carousel-4 {
+    height: 600px;
+    background-color: white;
+}
+
+#carousel-4 img {
+    object-fit: contain;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Primeira e última imagem do Hecho em tamanho completo */
+#carousel-4 img:first-child,
+#carousel-4 img:last-child {
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(28, 49, 68, 0.7);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(28, 49, 68, 0.9);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Indicadores do Carousel */
+.carousel-indicadores {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.indicador {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #CCC;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicador.ativo {
+    background-color: var(--accent-color);
+}
+
+.indicador:hover {
+    background-color: var(--primary-color);
+}
+
+/* Credenciais de Acesso */
+.credenciais-acesso {
+    background-color: var(--background-light);
+    border-left: 4px solid var(--accent-color);
+    padding: 25px 30px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.credenciais-acesso h4 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.credenciais-acesso h4 i {
+    color: var(--accent-color);
+}
+
+.credencial-item {
+    background-color: white;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    transition: all 0.3s ease;
+}
+
+.credencial-item:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 2px 8px rgba(0, 168, 150, 0.1);
+}
+
+.credencial-item:last-child {
+    margin-bottom: 0;
+}
+
+.credencial-item strong {
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.credencial-item p {
+    margin: 5px 0;
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.credencial-item p i {
+    color: var(--accent-color);
+    font-size: 0.85rem;
+}
+
+/* Container de Vídeo - Link Externo */
+.video-link-container {
+    text-align: right;
+    margin: 0 auto 30px;
+}
+
+.btn-video-externo {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 168, 150, 0.2);
+}
+
+.btn-video-externo:hover {
+    background-color: #008f7b;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 168, 150, 0.3);
+}
+
+.btn-video-externo i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+/* 5. Rodapé */
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.9rem;
+}
+.footer i {
+    color: #E74C3C;
+    margin: 0 5px;
+}
+
+/* MEDIA QUERIES para Responsividade */
+
+/* Tablets e telas médias */
+@media (max-width: 992px) {
+    .secao-principal {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 80px;
+        gap: 40px;
+    }
+
+    .perfil {
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #E0E0E0;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .texto-apresentacao {
+        padding-top: 0;
+    }
+
+    .projetos-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .modal-content {
+        padding: 30px 15px;
+        margin: 10px;
+    }
+
+    .carousel-imagens {
+        height: 300px;
+    }
+
+    .carousel-btn {
+        padding: 10px 15px;
+        font-size: 1.2rem;
+    }
+
+    .descricao-projeto {
+        padding: 0 10px;
+    }
+}
+
+/* Smartphones e telas pequenas */
+@media (max-width: 768px) {
+    /* Header responsivo */
+    .header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .navbar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 0 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Seção principal */
+    .secao, .secao-principal {
+        padding: 60px 0;
+    }
+
+    .avatar img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .nome {
+        font-size: 1.6rem;
+    }
+
+    .texto-apresentacao p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .curriculo-link {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    /* Habilidades */
+    .habilidades-container {
+        gap: 10px;
+    }
+
+    .habilidade-badge {
+        padding: 10px 18px;
+        font-size: 0.85rem;
+    }
+
+    /* Projetos */
+    .projetos-container {
+        padding: 0 15px;
+    }
+
+    .projeto-card {
+        border-radius: 15px;
+    }
+
+    .projeto-logo {
+        width: 200px;
+        height: 120px;
+    }
+
+    .card-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-info p {
+        font-size: 0.9rem;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 20px 15px;
+        margin: 10px;
+        max-height: 95vh;
+    }
+
+    .detalhes-conteudo h3 {
+        font-size: 1.5rem;
+    }
+
+    .descricao-projeto {
+        font-size: 0.95rem;
+        padding: 0 5px;
+    }
+
+    .carousel-imagens {
+        height: 250px;
+    }
+
+    #carousel-4 {
+        height: 450px;
+    }
+
+    .carousel-btn {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+
+    .credenciais-acesso {
+        padding: 20px 15px;
+        margin: 20px 10px;
+    }
+
+    .credenciais-acesso h4 {
+        font-size: 1.1rem;
+    }
+
+    .credencial-item {
+        padding: 12px 15px;
+    }
+
+    .credencial-item p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 480px) {
+    .header {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .navbar a {
+        margin: 0 10px;
+        font-size: 0.85rem;
+    }
+
+    .avatar img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nome {
+        font-size: 1.4rem;
+    }
+
+    .links-sociais-secao-principal a {
+        font-size: 1.3rem;
+        margin: 0 6px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .habilidade-badge {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    .projeto-logo {
+        width: 180px;
+        height: 100px;
+    }
+
+    .btn-plataforma,
+    .btn-ver-mais {
+        padding: 12px 18px;
+        font-size: 0.9rem;
+    }
+
+    .carousel-imagens {
+        height: 200px;
+    }
+
+    #carousel-4 {
+        height: 350px;
+    }
+
+    .carousel-btn {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    .carousel-btn.prev {
+        left: 5px;
+    }
+
+    .carousel-btn.next {
+        right: 5px;
+    }
+
+    .btn-fechar-modal {
+        font-size: 1.5rem;
+        top: 10px;
+        right: 15px;
+    }
+
+    .detalhes-conteudo h3 {
+        font-size: 1.3rem;
+    }
+
+    .descricao-projeto {
+        font-size: 0.9rem;
+    }
+
+    .credenciais-acesso h4 {
+        font-size: 1rem;
+    }
+
+    .credencial-item strong {
+        font-size: 0.95rem;
+    }
+
+    .credencial-item p {
+        font-size: 0.8rem;
+    }
+}
