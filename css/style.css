@@ -122,6 +122,7 @@ a {
 .texto-apresentacao {
     flex-grow: 1;
     padding-top: 20px;
+    padding-right: 40px;
 }
 
 .texto-apresentacao p {
@@ -426,9 +427,9 @@ a {
 }
 
 .btn-fechar-modal {
-    position: sticky;
-    top: 0;
-    right: 0;
+    position: absolute;
+    top: 15px;
+    right: 20px;
     font-size: 2rem;
     background: white;
     border: none;
@@ -436,11 +437,14 @@ a {
     cursor: pointer;
     transition: color 0.3s;
     z-index: 100;
-    float: right;
-    margin: 10px 10px 0 0;
     padding: 5px 10px;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-fechar-modal:hover {
@@ -834,7 +838,9 @@ a {
         right: 15px;
         font-size: 2.5rem;
         background: white;
-        padding: 0 12px;
+        padding: 0;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
