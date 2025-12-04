@@ -759,7 +759,7 @@ a {
 
     .texto-apresentacao p {
         font-size: 1rem;
-        text-align: left;
+        text-align: justify;
     }
 
     .curriculo-link {
@@ -816,7 +816,12 @@ a {
 
     .descricao-projeto {
         font-size: 0.95rem;
-        padding: 0 5px;
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    .descricao-projeto p {
+        text-align: justify;
     }
 
     .carousel-imagens {
