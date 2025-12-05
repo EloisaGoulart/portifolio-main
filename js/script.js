@@ -25,7 +25,7 @@ function copiarEmail(event) {
         
         document.body.appendChild(notificacao);
         
-        // Remove a notificação após 3 segundos
+        // tempo notificação
         setTimeout(() => {
             notificacao.style.animation = 'slideOut 0.3s ease-out';
             setTimeout(() => notificacao.remove(), 300);
@@ -35,7 +35,7 @@ function copiarEmail(event) {
     });
 }
 
-// Controle do carousel - índice atual para cada projeto
+// Controle do carousel 
 let slideAtual = {
     1: 0,
     2: 0,
@@ -43,39 +43,36 @@ let slideAtual = {
     4: 0
 };
 
-// Função para abrir detalhes do projeto
+// Petalhes do projeto
 function abrirDetalhes(projetoId) {
     const modal = document.getElementById('modal-detalhes');
     const detalhes = document.getElementById(`detalhes-projeto-${projetoId}`);
-    
-    // Esconde todos os detalhes
     document.querySelectorAll('.detalhes-conteudo').forEach(d => d.style.display = 'none');
     
-    // Mostra o modal e os detalhes do projeto selecionado
+    // Projeto selecionado
     modal.style.display = 'flex';
     detalhes.style.display = 'block';
     
-    // Inicializa o carousel
+    // Carousel
     slideAtual[projetoId] = 0;
     mostrarSlide(projetoId, 0);
     criarIndicadores(projetoId);
     
-    // Previne scroll do body
     document.body.style.overflow = 'hidden';
 }
 
-// Função para fechar o modal
+// Fechar o modal
 function fecharDetalhes() {
     const modal = document.getElementById('modal-detalhes');
     modal.style.display = 'none';
     
-    // Pausa todos os vídeos ao fechar
+    // Pausa vídeos
     document.querySelectorAll('video').forEach(video => {
         video.pause();
         video.currentTime = 0;
     });
     
-    // Restaura scroll do body
+    // Restaura scroll
     document.body.style.overflow = 'auto';
 }
 
@@ -87,21 +84,21 @@ window.onclick = function(event) {
     }
 }
 
-// Fechar modal com tecla ESC
+// Fechar modal com ESC
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         fecharDetalhes();
     }
 });
 
-// Função para mudar slide
+// Mudar slide
 function mudarSlide(projetoId, direcao) {
     const carousel = document.getElementById(`carousel-${projetoId}`);
     const slides = carousel.querySelectorAll('img');
     
     slideAtual[projetoId] += direcao;
     
-    // Loop circular
+    // Loop
     if (slideAtual[projetoId] >= slides.length) {
         slideAtual[projetoId] = 0;
     }
@@ -112,24 +109,21 @@ function mudarSlide(projetoId, direcao) {
     mostrarSlide(projetoId, slideAtual[projetoId]);
 }
 
-// Função para mostrar slide específico
+// Slide específico
 function mostrarSlide(projetoId, index) {
     const carousel = document.getElementById(`carousel-${projetoId}`);
     const slides = carousel.querySelectorAll('img');
     
-    // Esconde todas as imagens
     slides.forEach(slide => slide.classList.remove('ativo'));
     
-    // Mostra a imagem atual
     if (slides[index]) {
         slides[index].classList.add('ativo');
     }
     
-    // Atualiza indicadores
     atualizarIndicadores(projetoId, index);
 }
 
-// Função para criar indicadores
+// Criar indicadores
 function criarIndicadores(projetoId) {
     const carousel = document.getElementById(`carousel-${projetoId}`);
     const indicadoresContainer = document.getElementById(`indicadores-${projetoId}`);
@@ -150,7 +144,7 @@ function criarIndicadores(projetoId) {
     atualizarIndicadores(projetoId, 0);
 }
 
-// Função para atualizar indicadores
+// Atualizar indicadores
 function atualizarIndicadores(projetoId, index) {
     const indicadores = document.querySelectorAll(`#indicadores-${projetoId} .indicador`);
     indicadores.forEach((ind, i) => {
@@ -162,7 +156,7 @@ function atualizarIndicadores(projetoId, index) {
     });
 }
 
-// Suporte para navegação por teclado no carousel
+// Navegação por teclado no carousel
 document.addEventListener('keydown', function(event) {
     const modal = document.getElementById('modal-detalhes');
     if (modal.style.display === 'flex') {
