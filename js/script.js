@@ -1,5 +1,3 @@
-// script.js
-
 // Função para copiar email para o clipboard
 function copiarEmail(event) {
     event.preventDefault();
