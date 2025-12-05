@@ -7,7 +7,7 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Scroll suave para o menu */
+    scroll-behavior: smooth; 
 }
 
 * {
@@ -30,8 +30,8 @@ body {
 }
 
 .secao, .secao-principal {
-    padding: 100px 0; /* Maior espaçamento vertical */
-    border-bottom: 1px solid #EDEDED; /* Divisão sutil */
+    padding: 100px 0;
+    border-bottom: 1px solid #EDEDED; 
 }
 
 h2 {
@@ -191,7 +191,7 @@ a {
 
 /* Categorias de Habilidades */
 .habilidade-badge.frontend {
-    background-color: #00B8A8; /* Tom mais claro */
+    background-color: #00B8A8; 
     box-shadow: 0 2px 8px rgba(0, 184, 168, 0.2);
 }
 .habilidade-badge.frontend:hover {
@@ -200,7 +200,7 @@ a {
 }
 
 .habilidade-badge.ferramentas {
-    background-color: #00A896; /* Tom médio-claro */
+    background-color: #00A896; 
     box-shadow: 0 2px 8px rgba(0, 168, 150, 0.2);
 }
 .habilidade-badge.ferramentas:hover {
@@ -209,7 +209,7 @@ a {
 }
 
 .habilidade-badge.backend {
-    background-color: #00A08F; /* Tom médio */
+    background-color: #00A08F; 
     box-shadow: 0 2px 8px rgba(0, 160, 143, 0.2);
 }
 .habilidade-badge.backend:hover {
@@ -218,7 +218,7 @@ a {
 }
 
 .habilidade-badge.design {
-    background-color: #009385; /* Tom médio-escuro */
+    background-color: #009385; 
     box-shadow: 0 2px 8px rgba(0, 147, 133, 0.2);
 }
 .habilidade-badge.design:hover {
@@ -227,7 +227,7 @@ a {
 }
 
 .habilidade-badge.tech {
-    background-color: #007E72; /* Tom escuro */
+    background-color: #007E72; 
     box-shadow: 0 2px 8px rgba(0, 126, 114, 0.2);
 }
 .habilidade-badge.tech:hover {
@@ -236,7 +236,7 @@ a {
 }
 
 .habilidade-badge.outras {
-    background-color: #006B5F; /* Tom mais escuro */
+    background-color: #006B5F; 
     box-shadow: 0 2px 8px rgba(0, 107, 95, 0.2);
 }
 .habilidade-badge.outras:hover {
@@ -646,7 +646,7 @@ a {
     font-size: 0.85rem;
 }
 
-/* Container de Vídeo - Link Externo */
+/* Vídeo Link */
 .video-link-container {
     text-align: right;
     margin: 0 auto 30px;
@@ -676,7 +676,7 @@ a {
     font-size: 1.3rem;
 }
 
-/* 5. Rodapé */
+/* Rodapé */
 .footer {
     text-align: center;
     padding: 30px 20px;
@@ -866,13 +866,13 @@ a {
         height: 450px;
     }
 
-    /* Primeira imagem do Hecho no mobile - não cortar */
+    /* imagem do Hecho no mobile*/
     #carousel-4 img:first-child {
         object-fit: contain;
         width: auto;
     }
 
-    /* PedalCrew no mobile - manter contain */
+    /* PedalCrew no mobile */
     #carousel-3 {
         height: 250px;
     }
