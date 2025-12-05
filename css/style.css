@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #1C3144; /* Deep Navy (Texto/Foco) */
-    --accent-color: #00A896; /* Deep Teal (Destaque) */
+    --primary-color: #1C3144; /* Deep Navy */
+    --accent-color: #00A896; /* Deep Teal*/
     --background-light: #F7F8F9; 
     --text-color: #4A4A4A;
     --shadow-light: 0 4px 12px rgba(0,0,0,0.08);
