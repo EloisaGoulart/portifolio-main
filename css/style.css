@@ -245,13 +245,24 @@ a {
 }
 
 /* Projetos */
+.projetos-fileira {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
 .projetos-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(280px, 350px));
+    grid-template-columns: repeat(3, minmax(280px, 350px));
     gap: 30px;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.projetos-fileira .projetos-container:last-child {
+    grid-template-columns: repeat(2, minmax(280px, 350px));
 }
 
 .projeto-card {

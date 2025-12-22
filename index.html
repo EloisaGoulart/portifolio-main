@@ -101,6 +101,24 @@
                 </div>
             </div>
 
+            <!-- Museu Vivo -->
+            <div class="projeto-card" data-projeto="5">
+                <div class="card-base">
+                    <div class="projeto-logo">
+                        <img src="assets/projetos/MuseuVivo.logo.png" alt="Logo Museu Vivo" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150?text=Projeto+5'">
+                    </div>
+                    <div class="card-info">
+                        <h3>Museu Vivo</h3>
+
+                        <P>Aplicação web de catálogo de obras de arte</P>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="https://museu-vivo.vercel.app/" class="btn-plataforma">Acessar Plataforma</a>
+                        <button class="btn-ver-mais" onclick="abrirDetalhes(5)">Ver Mais</button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Portal Sesi em Casa -->
             <div class="projeto-card" data-projeto="2">
                 <div class="card-base">
@@ -180,6 +198,24 @@
                     <p>Tux Games é um catálogo web desenvolvido em HTML, CSS e JavaScript, com um banco de dados usado para armazenar as mensagens enviadas pelo formulário de contato. O projeto é dividido em três páginas (vitrine, catálogo e contato) cada uma com seus próprios arquivos de estrutura, estilo e script.</p>
                     <p>No catálogo, o JavaScript carrega os jogos, cria os cards e aplica o sistema de filtros, organizando os itens por categoria a partir da manipulação do DOM. Já a página de contato envia os dados preenchidos pelo usuário para o banco de dados após validações básicas.</p>
                     <p>A estrutura do código separa HTML, CSS e JavaScript por função, com o JS responsável pelas funcionalidades do catálogo e do envio das mensagens.</p>
+                </div>
+            </div>
+
+            <div id="detalhes-projeto-5" class="detalhes-conteudo" style="display: none;">
+                <h3>Museu Vivo</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="mudarSlide(5, -1)">&#10094;</button>
+                    <div class="carousel-imagens" id="carousel-5">
+                        <img src="assets/tipografia Tux.png" alt="Imagem 1" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+1'">
+                        <img src="assets/supabase-schema-mjonleauwersmikhshao (1).png" alt="Imagem 2" loading="lazy" onerror="this.src='https://via.placeholder.com/800x500?text=Imagem+2'">
+                    </div>
+                    <button class="carousel-btn next" onclick="mudarSlide(5, 1)">&#10095;</button>
+                </div>
+                <div class="carousel-indicadores" id="indicadores-5"></div>
+                <div class="descricao-projeto">
+                    <p>Museu Vivo é uma aplicação web desenvolvida em React que utiliza a Metropolitan Museum of Art Collection API para apresentar obras de arte de diferentes períodos e culturas de forma visual e organizada. O usuário pode realizar buscas por palavras-chave e explorar os resultados por meio de cards com imagem, título, artista e data.</p>
+                    <p>Ao selecionar uma obra, a aplicação exibe uma página de detalhes com informações completas, organizadas em um layout limpo e focado na experiência visual. O projeto também conta com um sistema de favoritos (moodboard), que permite salvar obras de interesse utilizando LocalStorage, garantindo persistência dos dados entre sessões, sem a necessidade de backend próprio.</p>
+                    <p>A estrutura do código é baseada em componentes reutilizáveis, com separação entre consumo da API, controle de estado e camada de apresentação. Foram aplicadas boas práticas de front-end, organização de pastas e otimização de performance, com atenção especial à usabilidade e à experiência do usuário.</p>
                 </div>
             </div>
 
